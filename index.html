@@ -5,32 +5,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+<style>
+    body, html {
+        height: 100%;
+        margin: 0;
+        line-height: 1.5;
+    }
+
+    .container {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 500px;
+        max-width: 800px;
+        min-width: 300px;
+        margin: 0 auto;
+        background-color: antiquewhite;
+        color:teal;
+        padding: 0.5em;
+    }
+
+    .header {
+        margin: 15px;
+        padding: 0;
+        text-align: center;
+    }
+    
+</style>
 </head>
 <body>
-    <header>
-        <h1 style="font-family:'Courier New', Courier, monospace">Royce M. Arpon</h1>
-    <nav>
-        <a href="/html/">About</a> |
-        <a href="/css/">Projects</a> |
-        <a href="/js/">Blogs</a> |
-        <a href="/python/">Contact</a>
-    </nav>
-    </header>
-    <img src="C:\Users\Royce Arpon\Downloads\icon.png" alt="icon" width="50" height="50">
+    <div class="container">
+        <header class="header">
+                <h1 style="font-family:'Courier New', Courier, monospace">Royce M. Arpon</h1>
+            <nav>
+                <a href="/html/">About</a> |
+                <a href="/css/">Projects</a> |
+                <a href="/js/">Blogs</a> |
+                <a href="/python/">Contact</a>
+            </nav>
+        </header>
+
+    <section class="about">
+        <img src="C:\Users\Royce Arpon\Downloads\icon.png" alt="icon" width="50" height="50">
         <p>Hello, I am <b>Royce M. Arpon</b>, an aspiring <i>full <em>stack web</em> developer</i>, <strong>pleasure</strong> to be acquainted with you!</p>
-    <h2>Here are my Sample Project</h2>
-        <ol>
-            <li>Project I My Portfolio</li>
-            <li>Project II My Business Website</li>
-        </ol>
-    <h3>My Skills:</h3>
+    </secion>
+
+    <section class="project">
+        <h2>Here are my Sample Project</h2>
+            <ol>
+                <li><a href="https://yhannopra.github.io/github-project/">Project I My Portfolio</a></li>
+                <li><a href="https://github.com/LearnComputerToday/githubproject">Project II</a></li>
+            </ol>
+    </secion>
+
+    <section class="skills">
+        <h3>Skills</h3>
         <p>HTML, CSS, JAVASCRIPT, REACTJS</p>
-    <h4>Please contact me:</h4>
+    </section>
+
+    <section class="contact">
+        <h4>Contact</h4>
             <p>09123826650</p>
             <p>roycearpon223@gmail.com</p>
+    </section>
+
     <footer>
         <p>Learncomputer.net</p>
         <p><a href="https://learncomputertoday.net/courses-2/getting-started-with-web-development/23472/" target="_blank">Direct Link</a></p>
     </footer>
+
+    </div>
 </body>
 </html>
